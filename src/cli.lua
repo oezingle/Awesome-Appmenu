@@ -1,8 +1,8 @@
-local argparse = require("c0c39dce-d76e-4053-a681-e84b8d58ab49.dep.lib.argparse")
-local Promise  = require("c0c39dce-d76e-4053-a681-e84b8d58ab49.dep.src.util.Promise")
+local argparse = require("d8f35b55-0b0f-41bf-8968-849b9a00e323.dep.lib.argparse")
+local Promise  = require("d8f35b55-0b0f-41bf-8968-849b9a00e323.dep.src.util.Promise")
 
-local spawn    = require("c0c39dce-d76e-4053-a681-e84b8d58ab49.dep.src.agnostic.spawn.promise")
-local appmenu  = require("c0c39dce-d76e-4053-a681-e84b8d58ab49.src.appmenu")
+local spawn    = require("d8f35b55-0b0f-41bf-8968-849b9a00e323.dep.src.agnostic.spawn.promise")
+local appmenu  = require("d8f35b55-0b0f-41bf-8968-849b9a00e323.src.appmenu")
 
 ---@param menu_items MenuItem[]
 ---@return fun(): MenuItem|nil
