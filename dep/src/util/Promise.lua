@@ -10,9 +10,9 @@
 --- required by build/appmenu/dep/src/agnostic/spawn/promise.lua
 --- required by build/appmenu/src/cli.lua
 --- required by build/appmenu/src/appmenu.lua
-local class = require("c69641ce-2aab-4455-bee4-a752d0ef1018.dep.lib.30log")
-local pack = require("c69641ce-2aab-4455-bee4-a752d0ef1018.dep.src.agnostic.version.pack")
-local unpack = require("c69641ce-2aab-4455-bee4-a752d0ef1018.dep.src.agnostic.version.unpack")
+local class = require("9e195806-d7a1-4cc1-8a6f-bd34d5804f51.dep.lib.30log")
+local pack = require("9e195806-d7a1-4cc1-8a6f-bd34d5804f51.dep.src.agnostic.version.pack")
+local unpack = require("9e195806-d7a1-4cc1-8a6f-bd34d5804f51.dep.src.agnostic.version.unpack")
 
 local lgi = require("lgi")
 
@@ -23,13 +23,14 @@ local GLib = lgi.GLib
 ---@alias PromiseChainFunction<T> (fun(arg: T): any)|nil
 
 -- yo what the fuck lua-language-server
----@class Promise<T> : Log.BaseFunctions, { after: fun(self: Promise, callback: (fun(arg: T): any)|nil): Promise<T|nil>|Promise }, { catch: fun(self: Promise, callback: (fun(arg: T): any)|nil): Promise<T|nil>|Promise }, { chain: fun(self: Promise, after: (fun(arg: T): any)|nil, catch: (fun(arg: any): any)|nil): Promise<T|nil>|Promise }, { fulfilled: boolean }, { _private: { callback: PromiseCallback, value: any, was_resolved: boolean } } Similar to JavaScript promises
+---@class Promise<T> : Log.BaseFunctions, { after: fun(self: Promise, callback: (fun(arg: T): any)|nil): Promise<T|nil>|Promise }, { catch: fun(self: Promise, callback: (fun(arg: T): any)|nil): Promise<T|nil>|Promise }, { chain: fun(self: Promise, after: (fun(arg: T): any)|nil, catch: (fun(arg: any): any)|nil): Promise<T|nil>|Promise }, { await: (fun(self: Promise<T>): T) }, { fulfilled: boolean }, { _private: { callback: PromiseCallback, value: any, was_resolved: boolean } } Similar to JavaScript promises
 ---@field _private { callback: PromiseCallback, value: any, was_resolved: boolean }
 ---@field fulfilled boolean
 ---@field triggered boolean
 ---@field next Promise|nil
 ---@field prev Promise|nil
 ---@field new fun(self: Promise)
+---@operator call(fun(res: function, rej: function)):Promise
 local Promise = class("Promise", {
     __is_a_promise = true
 })
@@ -217,7 +218,9 @@ function Promise:_trigger()
     self.triggered = true
 end
 
--- TODO Promise:await() - somehow
+-- TODO only works if this loop's idle priority is equal to the other's
+-- TODO hangs if higher, instantly returns if lower
+-- TODO make :catch resolve error object
 ---@generic T
 ---@param promise Promise<T>
 ---@return T
@@ -245,7 +248,9 @@ function Promise.await(promise)
         end
 
         if not ok then
-            error(err)
+            mainloop:quit()
+
+            return false
         end
 
         return true
@@ -254,6 +259,10 @@ function Promise.await(promise)
     context:pop_thread_default()
 
     mainloop:run()
+
+    if not ok then
+        error(err)
+    end
 
     return unpack(promise._private.value)
 end
