@@ -1,6 +1,6 @@
 --- required by build/appmenu/src/cli.lua
 
-local argparse = require("0f69ccdb-581a-4a4e-8d48-475e9cebc6ea.dep.lib.argparse.src.argparse")
+local argparse = require("6988790a-3167-4de7-93c3-c29651a262e8.dep.lib.argparse.src.argparse")
 
 if false then
     ---@class ArgParse.Option

@@ -1,15 +1,15 @@
-local class                 = require("0f69ccdb-581a-4a4e-8d48-475e9cebc6ea.dep.lib.30log")
-local parse_widget_template = require("0f69ccdb-581a-4a4e-8d48-475e9cebc6ea.src.parse_widget_template")
+local class                 = require("6988790a-3167-4de7-93c3-c29651a262e8.dep.lib.30log")
+local parse_widget_template = require("6988790a-3167-4de7-93c3-c29651a262e8.src.parse_widget_template")
 
 local awful                 = require("awful")
 local gtimer                = require("gears.timer")
 
-local no_scroll             = require("0f69ccdb-581a-4a4e-8d48-475e9cebc6ea.dep.src.widgets.helper.function.no_scroll")
+local no_scroll             = require("6988790a-3167-4de7-93c3-c29651a262e8.dep.src.widgets.helper.function.no_scroll")
 
-local appmenu               = require("0f69ccdb-581a-4a4e-8d48-475e9cebc6ea.src.appmenu")
+local appmenu               = require("6988790a-3167-4de7-93c3-c29651a262e8.src.appmenu")
 
-local default_button        = require("0f69ccdb-581a-4a4e-8d48-475e9cebc6ea.src.widget.button.default")
-local default_divider       = require("0f69ccdb-581a-4a4e-8d48-475e9cebc6ea.src.widget.button.default.divider")
+local default_button        = require("6988790a-3167-4de7-93c3-c29651a262e8.src.widget.button.default")
+local default_divider       = require("6988790a-3167-4de7-93c3-c29651a262e8.src.widget.button.default.divider")
 
 ---@module "widget.menu"
 local menu_builder
