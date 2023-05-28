@@ -1,8 +1,8 @@
 --- required by build/appmenu/src/menu_provider/gtk/init.lua
 --- required by build/appmenu/src/cli.lua
 
-local spawn = require("6988790a-3167-4de7-93c3-c29651a262e8.dep.src.agnostic.spawn")
-local Promise = require("6988790a-3167-4de7-93c3-c29651a262e8.dep.src.util.Promise")
+local spawn = require("a0e6c2e1-f66a-4a00-838a-f9bb0808f5ad.dep.src.agnostic.spawn")
+local Promise = require("a0e6c2e1-f66a-4a00-838a-f9bb0808f5ad.dep.src.util.Promise")
 
 ---@param command string
 ---@return Promise
