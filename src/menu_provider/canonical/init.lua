@@ -1,9 +1,9 @@
-local base = require("ed44928a-2b09-4f7b-afc8-62d7935b5f23.src.menu_provider.base")
-local Promise = require("ed44928a-2b09-4f7b-afc8-62d7935b5f23.dep.src.util.Promise")
-local dbus = require("ed44928a-2b09-4f7b-afc8-62d7935b5f23.dep.src.util.lgi.dbus")
+local base = require("2976cd09-044b-4491-85fc-7bd82aaa8fb9.src.menu_provider.base")
+local Promise = require("2976cd09-044b-4491-85fc-7bd82aaa8fb9.dep.src.util.Promise")
+local dbus = require("2976cd09-044b-4491-85fc-7bd82aaa8fb9.dep.src.util.lgi.dbus")
 
-local GVariant = require("ed44928a-2b09-4f7b-afc8-62d7935b5f23.dep.src.util.lgi.GVariant")
-local canonical_menu_item = require("ed44928a-2b09-4f7b-afc8-62d7935b5f23.src.menu_provider.canonical.item")
+local GVariant = require("2976cd09-044b-4491-85fc-7bd82aaa8fb9.dep.src.util.lgi.GVariant")
+local canonical_menu_item = require("2976cd09-044b-4491-85fc-7bd82aaa8fb9.src.menu_provider.canonical.item")
 
 local registrar = dbus.new_smart_proxy(
     "com.canonical.AppMenu.Registrar",

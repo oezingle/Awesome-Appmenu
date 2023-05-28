@@ -1,10 +1,10 @@
-local class = require("ed44928a-2b09-4f7b-afc8-62d7935b5f23.dep.lib.30log")
+local class = require("2976cd09-044b-4491-85fc-7bd82aaa8fb9.dep.lib.30log")
 
-local GVariant = require("ed44928a-2b09-4f7b-afc8-62d7935b5f23.dep.src.util.lgi.GVariant")
-local Promise = require("ed44928a-2b09-4f7b-afc8-62d7935b5f23.dep.src.util.Promise")
-local gvariant_ipairs = require("ed44928a-2b09-4f7b-afc8-62d7935b5f23.dep.src.util.lgi.gvariant_ipairs")
+local GVariant = require("2976cd09-044b-4491-85fc-7bd82aaa8fb9.dep.src.util.lgi.GVariant")
+local Promise = require("2976cd09-044b-4491-85fc-7bd82aaa8fb9.dep.src.util.Promise")
+local gvariant_ipairs = require("2976cd09-044b-4491-85fc-7bd82aaa8fb9.dep.src.util.lgi.gvariant_ipairs")
 
-local divider_item = require("ed44928a-2b09-4f7b-afc8-62d7935b5f23.src.menu_provider.divider")
+local divider_item = require("2976cd09-044b-4491-85fc-7bd82aaa8fb9.src.menu_provider.divider")
 
 -- TODO calling org.gtk.Menus.End is good practice, but not required
 -- TODO menu number is hard coded here as 0
