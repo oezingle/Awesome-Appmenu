@@ -10,9 +10,9 @@
 --- required by build/appmenu/dep/src/agnostic/spawn/promise.lua
 --- required by build/appmenu/src/cli.lua
 --- required by build/appmenu/src/appmenu.lua
-local class = require("a6104196-cea0-461f-88ee-9e673cbec7ea.dep.lib.30log")
-local pack = require("a6104196-cea0-461f-88ee-9e673cbec7ea.dep.src.agnostic.version.pack")
-local unpack = require("a6104196-cea0-461f-88ee-9e673cbec7ea.dep.src.agnostic.version.unpack")
+local class = require("f31759d0-79d2-47e6-8171-306bdcf3a135.dep.lib.30log")
+local pack = require("f31759d0-79d2-47e6-8171-306bdcf3a135.dep.src.agnostic.version.pack")
+local unpack = require("f31759d0-79d2-47e6-8171-306bdcf3a135.dep.src.agnostic.version.unpack")
 
 local lgi = require("lgi")
 

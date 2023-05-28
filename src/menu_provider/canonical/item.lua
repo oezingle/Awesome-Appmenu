@@ -1,10 +1,10 @@
-local class = require("a6104196-cea0-461f-88ee-9e673cbec7ea.dep.lib.30log")
+local class = require("f31759d0-79d2-47e6-8171-306bdcf3a135.dep.lib.30log")
 
-local GVariant = require("a6104196-cea0-461f-88ee-9e673cbec7ea.dep.src.util.lgi.GVariant")
-local Promise = require("a6104196-cea0-461f-88ee-9e673cbec7ea.dep.src.util.Promise")
-local gvariant_ipairs = require("a6104196-cea0-461f-88ee-9e673cbec7ea.dep.src.util.lgi.gvariant_ipairs")
+local GVariant = require("f31759d0-79d2-47e6-8171-306bdcf3a135.dep.src.util.lgi.GVariant")
+local Promise = require("f31759d0-79d2-47e6-8171-306bdcf3a135.dep.src.util.Promise")
+local gvariant_ipairs = require("f31759d0-79d2-47e6-8171-306bdcf3a135.dep.src.util.lgi.gvariant_ipairs")
 
-local divider_item = require("a6104196-cea0-461f-88ee-9e673cbec7ea.src.menu_provider.divider")
+local divider_item = require("f31759d0-79d2-47e6-8171-306bdcf3a135.src.menu_provider.divider")
 
 ---@class CanonicalMenuItem : MenuItem
 ---@field activate fun(self: MenuItem): Promise<nil>

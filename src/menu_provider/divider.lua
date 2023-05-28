@@ -1,7 +1,7 @@
 
-local class = require("a6104196-cea0-461f-88ee-9e673cbec7ea.dep.lib.30log")
+local class = require("f31759d0-79d2-47e6-8171-306bdcf3a135.dep.lib.30log")
 
-local Promise = require("a6104196-cea0-461f-88ee-9e673cbec7ea.dep.src.util.Promise")
+local Promise = require("f31759d0-79d2-47e6-8171-306bdcf3a135.dep.src.util.Promise")
 
 ---@class DividerMenuItem : MenuItem
 local divider_item = class("DividerMenuItem", {
