@@ -1,8 +1,8 @@
-local Promise = require("0045eaaf-17bd-4d4e-90f6-dff216a49d23.dep.src.util.Promise")
-local start_server = require("0045eaaf-17bd-4d4e-90f6-dff216a49d23.src.start_server")
+local Promise = require("a8ab7585-1a17-4fa5-80cc-467ce1f81042.dep.src.util.Promise")
+local start_server = require("a8ab7585-1a17-4fa5-80cc-467ce1f81042.src.start_server")
 
-local canonical_menu = require("0045eaaf-17bd-4d4e-90f6-dff216a49d23.src.menu_provider.canonical")
-local gtk_menu = require("0045eaaf-17bd-4d4e-90f6-dff216a49d23.src.menu_provider.gtk")
+local canonical_menu = require("a8ab7585-1a17-4fa5-80cc-467ce1f81042.src.menu_provider.canonical")
+local gtk_menu = require("a8ab7585-1a17-4fa5-80cc-467ce1f81042.src.menu_provider.gtk")
 
 local traceback = debug.traceback
 
