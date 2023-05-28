@@ -20,13 +20,13 @@
     - keep menu in memory as much as possible
         - limits DBus calls, therefore increasing speed
 ]]
-local appmenu                 = require("9793106b-df92-41a0-a00d-28bc407b04e7.src.appmenu")
-local fake_menu_item          = require("9793106b-df92-41a0-a00d-28bc407b04e7.src.menu_provider.fake")
+local appmenu                 = require("fd5d405c-8daf-49cc-b809-0665a9d3b1f7.src.appmenu")
+local fake_menu_item          = require("fd5d405c-8daf-49cc-b809-0665a9d3b1f7.src.menu_provider.fake")
 
-local uppercase_first_letters = require("9793106b-df92-41a0-a00d-28bc407b04e7.dep.src.util.uppercase_first_letters")
+local uppercase_first_letters = require("fd5d405c-8daf-49cc-b809-0665a9d3b1f7.dep.src.util.uppercase_first_letters")
 
-local menu_builder            = require("9793106b-df92-41a0-a00d-28bc407b04e7.src.widget.menu")
-local button_builder          = require("9793106b-df92-41a0-a00d-28bc407b04e7.src.widget.button")
+local menu_builder            = require("fd5d405c-8daf-49cc-b809-0665a9d3b1f7.src.widget.menu")
+local button_builder          = require("fd5d405c-8daf-49cc-b809-0665a9d3b1f7.src.widget.button")
 
 button_builder.set_menu_builder(menu_builder)
 menu_builder.set_button_builder(button_builder)
