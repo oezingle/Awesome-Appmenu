@@ -11,4 +11,4 @@ end
 require(folder_of_this_file .. "_shim")
 
 -- TODO @path
-return require("bf1098fc-5829-4aa0-bc12-53b6e0a3a32a.src.widget")
+return require("9793106b-df92-41a0-a00d-28bc407b04e7.src.widget")
