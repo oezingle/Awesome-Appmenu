@@ -1,5 +1,5 @@
-local class = require("73b08e77-9523-460d-a24a-9739f3229cce.dep.lib.30log")
-local Promise = require("73b08e77-9523-460d-a24a-9739f3229cce.dep.src.util.Promise")
+local class = require("b4b8790a-35d0-429d-b907-58371e9ded29.dep.lib.30log")
+local Promise = require("b4b8790a-35d0-429d-b907-58371e9ded29.dep.src.util.Promise")
 
 -- TODO inherit children from another MenuItem?
 
