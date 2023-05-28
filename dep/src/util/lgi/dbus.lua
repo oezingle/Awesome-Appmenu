@@ -2,12 +2,12 @@
 --- required by build/appmenu/src/menu_provider/canonical/init.lua
 -- Quick DBus helper methods
 
-local pack = require("1309acd9-7750-4674-ac1c-47ed92eb73e0.dep.src.agnostic.version.pack")
-local unpack = require("1309acd9-7750-4674-ac1c-47ed92eb73e0.dep.src.agnostic.version.unpack")
-local native_error = require("1309acd9-7750-4674-ac1c-47ed92eb73e0.dep.src.util.lgi.native_error")
+local pack = require("03c9e770-baa2-402b-afa3-29d14e6fdf64.dep.src.agnostic.version.pack")
+local unpack = require("03c9e770-baa2-402b-afa3-29d14e6fdf64.dep.src.agnostic.version.unpack")
+local native_error = require("03c9e770-baa2-402b-afa3-29d14e6fdf64.dep.src.util.lgi.native_error")
 
-local class = require("1309acd9-7750-4674-ac1c-47ed92eb73e0.dep.lib.30log")
-local Promise = require("1309acd9-7750-4674-ac1c-47ed92eb73e0.dep.src.util.Promise")
+local class = require("03c9e770-baa2-402b-afa3-29d14e6fdf64.dep.lib.30log")
+local Promise = require("03c9e770-baa2-402b-afa3-29d14e6fdf64.dep.src.util.Promise")
 
 -- TODO SmartTable.method_async - abusing the AwesomeWM mainloop does not fly!
 
