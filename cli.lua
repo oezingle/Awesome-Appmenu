@@ -11,4 +11,4 @@ end
 require(folder_of_this_file .. "_shim")
 
 -- TODO @path
-return require("b4b8790a-35d0-429d-b907-58371e9ded29.src.cli")
+return require("c3aea7c1-095b-4150-88c1-19fda04cc188.src.cli")
