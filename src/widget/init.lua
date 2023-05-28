@@ -20,13 +20,13 @@
     - keep menu in memory as much as possible
         - limits DBus calls, therefore increasing speed
 ]]
-local appmenu                 = require("9e195806-d7a1-4cc1-8a6f-bd34d5804f51.src.appmenu")
-local fake_menu_item          = require("9e195806-d7a1-4cc1-8a6f-bd34d5804f51.src.menu_provider.fake")
+local appmenu                 = require("1309acd9-7750-4674-ac1c-47ed92eb73e0.src.appmenu")
+local fake_menu_item          = require("1309acd9-7750-4674-ac1c-47ed92eb73e0.src.menu_provider.fake")
 
-local uppercase_first_letters = require("9e195806-d7a1-4cc1-8a6f-bd34d5804f51.dep.src.util.uppercase_first_letters")
+local uppercase_first_letters = require("1309acd9-7750-4674-ac1c-47ed92eb73e0.dep.src.util.uppercase_first_letters")
 
-local menu_builder            = require("9e195806-d7a1-4cc1-8a6f-bd34d5804f51.src.widget.menu")
-local button_builder          = require("9e195806-d7a1-4cc1-8a6f-bd34d5804f51.src.widget.button")
+local menu_builder            = require("1309acd9-7750-4674-ac1c-47ed92eb73e0.src.widget.menu")
+local button_builder          = require("1309acd9-7750-4674-ac1c-47ed92eb73e0.src.widget.button")
 
 button_builder.set_menu_builder(menu_builder)
 menu_builder.set_button_builder(button_builder)

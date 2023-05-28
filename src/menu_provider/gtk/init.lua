@@ -1,11 +1,11 @@
 
-local gtk_menu_item = require("9e195806-d7a1-4cc1-8a6f-bd34d5804f51.src.menu_provider.gtk.item")
+local gtk_menu_item = require("1309acd9-7750-4674-ac1c-47ed92eb73e0.src.menu_provider.gtk.item")
 
-local base = require("9e195806-d7a1-4cc1-8a6f-bd34d5804f51.src.menu_provider.base")
-local Promise = require("9e195806-d7a1-4cc1-8a6f-bd34d5804f51.dep.src.util.Promise")
-local dbus = require("9e195806-d7a1-4cc1-8a6f-bd34d5804f51.dep.src.util.lgi.dbus")
+local base = require("1309acd9-7750-4674-ac1c-47ed92eb73e0.src.menu_provider.base")
+local Promise = require("1309acd9-7750-4674-ac1c-47ed92eb73e0.dep.src.util.Promise")
+local dbus = require("1309acd9-7750-4674-ac1c-47ed92eb73e0.dep.src.util.lgi.dbus")
 
-local spawn = require("9e195806-d7a1-4cc1-8a6f-bd34d5804f51.dep.src.agnostic.spawn.promise")
+local spawn = require("1309acd9-7750-4674-ac1c-47ed92eb73e0.dep.src.agnostic.spawn.promise")
 
 local gtk_menu = base:extend("GTKMenu", {
     MENU_TYPE = "GTK",
