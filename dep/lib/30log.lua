@@ -7,7 +7,7 @@
 --- required by build/appmenu/dep/src/util/lgi/dbus.lua
 --- required by build/appmenu/src/menu_provider/base.lua
 --- required by build/appmenu/dep/src/util/Promise.lua
-local class = require("c1a7b0b2-8d53-4d76-9f91-337bcec5604b.dep.lib.30log.30log")
+local class = require("73b08e77-9523-460d-a24a-9739f3229cce.dep.lib.30log.30log")
 
 -- hehe
 if false then

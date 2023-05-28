@@ -1,10 +1,10 @@
-local class                 = require("c1a7b0b2-8d53-4d76-9f91-337bcec5604b.dep.lib.30log")
-local Promise               = require("c1a7b0b2-8d53-4d76-9f91-337bcec5604b.dep.src.util.Promise")
-local appmenu               = require("c1a7b0b2-8d53-4d76-9f91-337bcec5604b.src.appmenu")
+local class                 = require("73b08e77-9523-460d-a24a-9739f3229cce.dep.lib.30log")
+local Promise               = require("73b08e77-9523-460d-a24a-9739f3229cce.dep.src.util.Promise")
+local appmenu               = require("73b08e77-9523-460d-a24a-9739f3229cce.src.appmenu")
 
 local wibox                 = require("wibox")
 
-local parse_widget_template = require("c1a7b0b2-8d53-4d76-9f91-337bcec5604b.src.parse_widget_template")
+local parse_widget_template = require("73b08e77-9523-460d-a24a-9739f3229cce.src.parse_widget_template")
 
 ---@module 'widget.button'
 local menu_button
