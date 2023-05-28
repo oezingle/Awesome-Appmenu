@@ -1,5 +1,5 @@
-local class = require("03c9e770-baa2-402b-afa3-29d14e6fdf64.dep.lib.30log")
-local Promise = require("03c9e770-baa2-402b-afa3-29d14e6fdf64.dep.src.util.Promise")
+local class = require("c0c39dce-d76e-4053-a681-e84b8d58ab49.dep.lib.30log")
+local Promise = require("c0c39dce-d76e-4053-a681-e84b8d58ab49.dep.src.util.Promise")
 
 local menu_provider = class("menu provider", {
     MENU_TYPE = "base"
